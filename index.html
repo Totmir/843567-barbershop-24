@@ -2,178 +2,120 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
+    <title>Барбершоп «Borodisnkiy»</title>
   </head>
   <body>
-    <header>
-        <div class='menu'>
-          <table>
-            <tr>
-              <th>Информация</th>
-              <th>Новости</th>
-              <th>Прайс-лист</th>
-              <th>Магазин</th>
-              <th>Контакты</th>
-              <th width='41.6%'>Вход</th>
-            </tr>
-          </table>
-        </div>
+    <header class='site header'>
+      <nav class='site-navigation'>
+        <a class='main-header-logo'>
+          <img src='img/index-logo.svg' width='368' height='153' alt='Логотип «Borodisnkiy»'>
+        </a>
+        <ul class='site-navigation'>
+          <li><a href='info.html'></a></li>
+          <li><a href='news.html'></a></li>
+          <li><a href='prise-list.html'></a></li>
+          <li><a href='shop.html'></a></li>
+          <li><a href='contacts.html'></a></li>
+        </ul>
+        <ul class='user-navigation'>
+          <li class='login-link'>Вход</li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <section class='logo slogan'>
-        <div class='logo'>
-          <a href='logo.png'>
-            <img src='logo.png' alt=" barbershop borodinski" width="100%">
-          </a>
-        </div>
-        <div class='slogan'>
-          <table class='white'>
-            <tr>
-              <th><h1>Быстро</h1></th>
-              <th><h1>Круто</h1></th>
-              <th><h1>Дорого</h1></th>
-            </tr>
-            <tr>
-              <td><div class='rhombus'></div></td>
-              <td><div class='rhombus'></div></td>
-              <td><div class='rhombus'></div></td>
-            </tr>
-              <td><p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! дВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ - СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p></td>
-              <td><p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p></td>
-              <td><p>НАШИ МАСТЕРА - ПРОФЕССИОНАЛЬНЫЕ </p></td>
-          </table>
-        </div>
-      <section class='news gallery'>
-        <table>
-          <!-- левый блок "Новости" -->
-          <tr>
-            <tr>
-              <th><h1>Новости</h1></th>
-            </tr>
-            <tr>
-              <td><p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ<hr>11 января</p></td>
-            </tr>
-            <tr>
-              <td><p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС "БРИТВА" СТРИГУНЕЦ, ОБЛАДАТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ <hr> 18 января</p></td>
-            </tr>
-            <tr>
-              <td class='white'>
-                <button type='button'>
-                  <p>ВСЕ НОВОСТИ</p>
-                </button>
-              </td>
-            </tr>
-          </tr>
-          <!-- правый блок "Фотогалерея" -->
-          <tr>
-            <tr>
-              <th><h1>ФОТОГАЛЕРЕЯ</h1></th>
-            </tr>
-            <tr>
-              <td><a href='interior.png'>
-                    <img src='interior.png' alt='Interior'>
-                  </a>
-              </td>
-            </tr class='white'>
-              <td>
-                <button type='button'>
-                  <p>НАЗАД</p>
-                </button>
-              </td>
-              <td>
-                <button type='button'>
-                  <p>ВПЕРЕД</p>
-                </button>
-              </td>
-          </tr>
-        </table>
-      <section>
-      <section class='contacts '>
-        <table>
-          <tr>
-            <td>
-                <tr>
-                  <th><h1>КОНТАКТНАЯ ИНФОРМАЦИЯ</h1></th>
-                </tr>
-                <tr>
-                  <td><p>БАРБЕШОП "БОРОДИНСКИЙ"<hr>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б.КОНЮШЕННАЯ, Д.19/8<hr>ТЕЛЕФОН: +7(495)666-02-66</p></td>
-                </tr>
-                <tr>
-                  <td><p>ВРЕМЯ РАБОТЫ:<hr>ПН-ПТ: с 10:00 ДО 22:00<hr>СБ-ВС: С 10:00 до 19:00</p></td>
-                </tr>
-                <tr>
-                  <td class='white'>
-                    <button type='button'>
-                      <p>КАК ПРОЕХАТЬ</p>
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button">
-                      <p>ОБРАТНАЯ СВЯЗЬ</p>
-                    </button>
-                  </td>
-                </tr>
-            </td>
-            <td>
-              <tr>
-                <th><h1>Записаться</h1></th>
-              </tr>
-              <tr>
-                <td><p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p></td>
-              </tr>
-              <tr>
-                <td><p>ДАТА</p></td>
-                <td><p>ВРЕМЯ</p></td>
-              </tr>
-              <tr>
-                <td><p>ВАШЕ ИМЯ</p></td>
-                <td><p>ТЕЛЕФОН</p></td>
-              </tr>
-              <tr>
-                <td>
-                  <form action='URL' method='get'>
-                    <tr>
-                      <td>
-                        <label>
-                          <input type='text' name='date'>
-                        </label>
-                      </td>
-                      <td>
-                        <label>
-                          <input type='text' name='time'>
-                        </label>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label>
-                          <input type='text' name='name'>
-                        </label>
-                      </td>
-                      <td>
-                        <label>
-                          <input type='text' name='phone_number'>
-                        </label>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type='submit' name='ОТПРАВИТЬ'>
-                      </td>
-                    </tr>
-                  </form>
-                </td>
-              </tr>
-            </td>
-          </tr>
-        </table>
+    <main class='container'>
+
+      <h1 class='visually-hidden'>Барбершоп «Borodisnkiy»</h1>
+
+      <section class='features'>
+        <h2 class='visually-hidden'>Преимущества</h2>
+        <ul>
+          <li class="feature-item">
+            <h3>Быстро</h3>
+            <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
+          </li>
+          <li class="feature-item">
+            <h3>Круто</h3>
+            <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+          </li>
+          <li class="feature-item">
+            <h3>Дорого</h3>
+            <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+          </li>
+        </ul>
       </section>
-      <footer>
-        <!--Не успел закончить до 14:00-->
-      </footer>
+      <section class='news'>
+        <h2>НОВОСТИ</h2>
+        <ul class="news-list">
+            <li class="news-item">
+              <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+              <time datetime='2016-01-11'>11 ЯНВАРЯ</time>
+            </li>
+            <li class='news-item'>
+              <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+              <time datetime='2016-01-18'>18 ЯНВАРЯ</time>
+            </li>
+        </ul>
+        <a class="button" href="news.html">Все новости</a>
+      </section>
+      <section class='gallery'>
+        <h2>ФОТОГАЛЛЕРЕЯ</h2>
+          <figure class='gallery-content'>
+            <a href='#'><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
+          </figure>
+          <div class="button gallery-button gallery-button-back">Назад</div>
+          <div class="button gallery-button gallery-button-next">Вперед</div>
+      </section>
+      <section class='contacts'>
+        <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+        <p>
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          Телефон: +7 (812) 666-02-66
+        </p>
+        <p>
+          Время работы:<br>
+          пн—пт: с 10:00 до 22:00<br>
+          сб—вс: с 10:00 до 19:00
+        </p>
+        <a class='button' href='map.html'>КАК ПРОЕХАТЬ</a>
+        <a class='button' href='contacts.html'>ОБРАТНАЯ СВЯЗЬ</a>
+      </section>
+      <section class="appointment">
+        <h2>Записаться</h2>
+        <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+        <!-- ФОРМА -->
       </section>
     </main>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <footer class='main-footer'>
+      <address class='footer-contacts'>
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            <a href="map.html">Как нас найти?</a><br>
+          Телефон: +7 (812) 666-02-66
+      </address>
+      <div class='footer-social'>
+        <b>Давайте дружить!</b>
+        <ul>
+          <a class="social-button" href="#">Вконтакте</a>
+          <a class="social-button" href="#">Фейсбук</a>
+          <a class="social-button" href="#">Инстаграм</a>
+        </ul>
+      </div>
+      <div class='footer-develeper'>
+        <b>РАЗРАБОТАНО:</b>
+        <a class='button' href='https://htmlacademy.ru'>HTML ACADEMY</a>
+      </div>
+      <section class='modal modal-login'>
+        <h2>Личный кабинет</h2>
+        <p>Введите свой логин и пароль.</p>
+        <!-- Форма -->
+        <span class='modal-close'>ЗАКРЫТЬ</span>
+      </section>
+      <section class="modal modal-map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <span class="modal-close">x</span>
+      </section>
+    </footer>
+    <p>Репозитори создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
   </body>
 </html>
