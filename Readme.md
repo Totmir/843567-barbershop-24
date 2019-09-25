@@ -1,4 +1,4 @@
-# Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
+# Учебный проект «Барбершоп»
 
 * Студент: [Хохлов Александр](https://htmlacademy.ru/profile/id843567).
 * Наставник: [Евгений Карпов](https://htmlacademy.ru/profile/id70583).
