@@ -1,0 +1,113 @@
+.decorNone(){
+	text-decoration: none;
+	color: white;
+}
+.list-reset(){
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.pseudo-elem(){
+	position: absolute;
+	display: inline-block;
+	content: "";
+}
+.triagle(@height: 37px, @bottom: -73px, @color: black){
+		.pseudo-elem();
+		z-index: 100;
+		width: 100%;
+		height: @height;
+		left: 0;
+		bottom: @bottom;
+		// background-image: linear-gradient(to right top, transparent 48%, @color 50%),
+		// 	linear-gradient(to left top, transparent 48%, @color 50%)
+		// ;
+		background-image: linear-gradient(to right top, transparent 50%, #202020 51%, @color 52%),
+			linear-gradient(to left top, transparent 50%, #202020 51%,@color 52%)
+		;
+			background-size: 50.2% 100%, 50.2% 100%;
+			background-repeat: no-repeat;
+			background-position: left, right;
+}
+.triagle-reversed (@height: 37px, @bottom: -73px, @color: black) {
+	.triagle(@height, @bottom, @color);
+	// background-image: linear-gradient(to right top,@color 50%, transparent  52%),
+	// 		linear-gradient(to left top, @color 50%,transparent  52%)
+	// 		;
+	background-image: linear-gradient(to right top,@color 50%,#505050 51%, transparent  52%),
+			linear-gradient(to left top, @color 50%,#505050 51%,transparent  52%)
+			;
+			bottom: auto;
+			top: @bottom;
+}
+
+.monthy-work (@_, @v-gap: 36px){
+	position: relative;
+	&:before {
+		.pseudo-elem();
+		bottom: auto;
+		right: auto;
+		top: 36px;
+		left: 0;
+		width: 176px;
+		border: 25px solid @brown-color;
+		border-left-width: 10px;
+		border-right-width: 10px;
+		border-right-color: transparent;
+
+	}
+	&:after {
+		.pseudo-elem();
+		line-height: 50px;
+		bottom: auto;
+		right: auto;
+		top: 36px;
+		left: 7%;
+		width: 176px;
+		height: 50px;
+		content: "Работа месяца";
+		z-index: 100;
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+.monthy-work(to-bottom, @v-gap: 36px){
+	&:before {
+		top: auto;
+		bottom: 36px;
+	
+	}
+	&:after {
+		top: auto;
+		bottom: 36px;
+		
+	}
+}
+.monthy-work(to-right,  @v-gap: 36px){
+	&:before {
+		border-color: @brown-color;
+		border-left-color: transparent;
+		left: auto;
+		right: 0;
+	}
+	&:after {
+		left: auto;
+		right: -10%;
+	}
+		
+}
+.monthy-work(to-right-bottom, @v-gap: 36px){
+	.monthy-work(to-right,  @v-gap);
+	&:before {
+		top: auto;
+		bottom: 36px;
+	
+	}
+	&:after {
+		top: auto;
+		bottom: 36px;
+		
+	}
+}

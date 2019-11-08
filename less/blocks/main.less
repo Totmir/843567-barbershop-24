@@ -1,0 +1,31 @@
+.main-body {
+	position: relative;
+}
+.main__title {
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+.main-inner {
+	position: relative;
+	padding-top: 30px;
+	background-color: @main-inner-bcolor;
+	&:after {
+		.triagle(37px, -37px, @secwhite-bcolor);
+	}
+	
+}
+@media (min-width: @tablet-width){
+	.main-inner:after {
+		display: none;
+		&:before {
+		.triagle-reversed(37px, -37px, @secwhite-bcolor);
+		}
+	}
+	.main-inner {
+		padding-top: 53px;
+	}
+}

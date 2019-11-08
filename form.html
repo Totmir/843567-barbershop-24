@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Бородинский - лучший Барбершоп">
+	<title>Самозапись Барбершоп "Бородинский"</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	
+
+</head>
+<body>
+	<div class="hide-overflow">
+	<header class="main-header" >
+		<picture class="main-header__logo main-header__logo--inner-page">
+			<source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+			<source media="(min-width: 768px)" srcset="img/logo-tablet.svg">	
+			<img  src="img/logo-mobile.svg" alt="Логотип Барбершоп" width="226" height="30">
+		</picture>
+
+		<!-- main-nav--no-js 
+			main-nav--open
+		-->
+		<nav class="main-nav main-nav--closed ">
+			
+			<div class="wrapper wrapper--relative">
+				<button class="main-nav__toggle"><span class="visually-hidden">Меню:</span></button>
+			<div class="main-nav__group">	
+			<ul class="main-nav__list site-list">
+				<li class="main-nav__item site-list__item "><a href="index.html">Главная</a></li>
+				<li class="main-nav__item site-list__item"><a href="photo.html">Наши работы</a></li>
+				<li class="main-nav__item site-list__item main-nav__item--current"><a>Записаться</a></li>
+				<li class="main-nav__item site-list__item"><a href="">Контакты</a></li>
+				<li class="main-nav__item site-list__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+			</ul>
+			<ul class="main-nav__list user-list">
+				<li class="main-nav__item user-list__item user-list__item--entry">
+				<a href="" class="user-list__link--entry">
+					<svg 
+					   viewBox="0 0 21.333332 21.333332"
+					   height="16" width="16" xml:space="preserve" version="1.1">
+					   <g
+					     transform="matrix(1.3333333,0,0,-1.3333333,0,21.333333)"
+					     ><g
+					       transform="scale(0.1)"
+					       >
+					       <path
+					         d="m 0,90 h 70.0977 v 29.398 L 109.602,79.9023 70.0977,40.8984 v 28.5 L 0,69.7969 V 90" />
+					        <path
+					        id="path16"
+					        
+					        d="M 70.0977,160 V 140 H 140.305 V 20.0977 H 70.0977 V 0 H 160 V 160 H 70.0977" /></g></g>
+					</svg>
+				Войти
+				</a></li>
+			</ul>
+			</div>
+			</div>
+		</nav>
+	</header>
+	<main class="main-inner">
+		<div class="wrapper">
+		<div class="form-sign__row form-sign__row--title">
+		<h1 class="main__title">
+			Запись на стрижку
+		</h1>
+		<a href="index.html" class="button-large form-sign__main-link">На главную</a>
+	</div>
+		<form action="#" class="form-sign">
+			<fieldset class="form-sign__field">
+				
+				<legend class="form-sign__title visually-hidden">Контактные данные:</legend>
+				<div class="form-sign__row form-sign__row--name">
+				<p class="form-sign__group">
+				<input type="text" id="lastname" class="form-sign__input-text form-sign__input-text--name"  placeholder="Фамилия">
+				<label for="lastname" class="form-sign__label-text visually-hidden">Фамилия</label>
+				</p>
+				<p class="form-sign__group">
+					<input type="text" id="firstname" class="form-sign__input-text form-sign__input-text--name"  placeholder="Имя">
+				<label for="firstname" class="form-sign__label-text visually-hidden">Имя</label>
+				</p>
+				<p class="form-sign__group">
+					<input type="text" id="nthname" class="form-sign__input-text form-sign__input-text--name"  placeholder="Отчество">
+				<label for="nthname" class="form-sign__label-text visually-hidden">Отчество</label>
+				</p>
+				</div>
+				<div class="form-sign__row form-sign__row-col">
+				<p class="form-sign__group">
+					<input type="text" id="phone" class="form-sign__input-text"  placeholder="Контактный телефон">
+				<label for="phone" class="form-sign__label-text visually-hidden">Контактный телефон</label>
+				</p>
+				<p class="form-sign__group">
+					<input type="text" id="email" class="form-sign__input-text"  placeholder="Контактный e-mail">
+				<label for="email" class="form-sign__label-text visually-hidden">Контактный e-mail</label>
+				</p>
+				</div>
+				
+				<p class="form-sign__group">
+					<textarea id="textarea" class="form-sign__txtarea" placeholder="Доп. информация для мастера"></textarea>
+				<label for="textarea" class="form-sign__label-txtarea visually-hidden">Доп. информация для мастера</label>
+				</p>
+			
+			</fieldset>
+
+			<fieldset class="form-sign__field ">
+
+				<legend class="form-sign__title">Выберите модель бороды:</legend>
+				<div class="form-sign__row form-sign__row--model">
+				<p class="form-sign__group 
+				form-sign__group--model">
+				<input type="radio" name="model" value="admiral" id="admiral" class="form-sign__input-radio" checked>
+				<label for="admiral" class="form-sign__label-radio">адмирал</label>
+				</p>
+				<p class="form-sign__group
+				form-sign__group--model">
+				<input type="radio" name="model" value="woodman" id="woodman" class="form-sign__input-radio">
+				<label for="woodman" class="form-sign__label-radio">лесоруб</label>
+				</p>
+				<p class="form-sign__group
+				form-sign__group--model">
+				<input type="radio" name="model" value="polar" id="polar" class="form-sign__input-radio">
+				<label for="polar" class="form-sign__label-radio">полярник</label>
+				</p>
+				<p class="form-sign__group
+				form-sign__group--model">
+				<input type="radio" name="model" value="boyar" id="boyar" class="form-sign__input-radio">
+				<label for="boyar" class="form-sign__label-radio">боярин</label>
+				</p>
+				<p class="form-sign__group
+				form-sign__group--model">
+				<input type="radio" name="model" value="sage" id="sage" class="form-sign__input-radio">
+				<label for="sage" class="form-sign__label-radio">мудрец</label>
+				</p>
+			</div>
+			</fieldset>
+			<fieldset class="form-sign__field">
+				
+				<legend class="form-sign__title form-sign__title--checkbox">Дополнительные услуги:</legend>
+				<div class="form-sign__row form-sign__row--checkbox">
+				<p class="form-sign__group form-sign__group--checkbox">
+				<input type="checkbox" id="color" class="form-sign__input-checkbox" checked>
+				<label for="color" class="form-sign__label-checkbox">Подкрасить бороду</label>
+				</p>
+				<p class="form-sign__group form-sign__group--checkbox">
+				<input type="checkbox" id="wind" class="form-sign__input-checkbox" checked>
+				<label for="wind" class="form-sign__label-checkbox">Накрутить усы</label>
+				</p>
+				<p class="form-sign__group form-sign__group--checkbox">
+				<input type="checkbox" id="comb" class="form-sign__input-checkbox">
+				<label for="comb" class="form-sign__label-checkbox">Причесать бороду</label>
+				</p>
+				<p class="form-sign__group form-sign__group--checkbox">
+				<input type="checkbox" id="trim" class="form-sign__input-checkbox">
+				<label for="trim" class="form-sign__label-checkbox">Подровнять виски</label>
+				</p>
+				<p class="form-sign__group form-sign__group--checkbox">
+				<input type="checkbox" id="removegh" class="form-sign__input-checkbox">
+				<label for="removegh" class="form-sign__label-checkbox">Убрать седину</label>
+				</p>
+				<p class="form-sign__group form-sign__group--checkbox">
+					<input type="checkbox" id="polish" class="form-sign__input-checkbox">
+				<label for="polish" class="form-sign__label-checkbox">Отполировать лысину</label>
+				</p>
+			</div>
+			</fieldset>
+			<button type="submit" class="form-sign__submit button-large button-large--brown button-large--disabled">Отправить заявку</button>
+		
+		</form>
+		</div>
+	</main>
+	<footer class="main-footer">
+		<div class="wrapper">
+			<div class="footer__container">
+		<section class="contats">
+			<h2 class="visually-hidden">Где мы находимся</h2>
+			<b>Барбершоп Бородинский</b>
+			<p>
+				г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+			</p>
+			<a href="tel:+78125556666" class="contacts__phone button-large button-large--black">+7 (812) 555-66-66</a>
+		</section>
+		<div class="social">
+			<a href="" class="social__link social__link--vk button-social"><span class="visually-hidden">Вконтакте</span></a>
+			<a href="" class="social__link social__link--fb button-social"><span class="visually-hidden">Фейсбук</span></a>
+			<a href="" class="social__link social__link--inst button-social"><span class="visually-hidden">Инстаграм</span></a>
+		</div>
+		<div class="copyright">
+			<b>Разработанно:</b><br>
+			<a href="https://htmlacademy.ru" class="copyright__link button-large button-large--black">HTML Academy</a>
+		</div>
+		</div>
+		</div>
+	</footer>
+	<section class="modal-login">
+		<h2 class="modal-login__title">
+			Личный кабинет
+		</h2>
+		<p>Введите свой логин и пароль, чтобы войти</p>
+		<form action="#" class="modal-login__form">
+			<p class="modal-login__field">
+			<input type="text" id="login" class="modal-login__input" placeholder="Логин">
+			<label for="login" class="modal-login__label modal-login__label--login"><span class="visually-hidden">Логин</span></label>
+			</p>
+			<p class="modal-login__field">
+			<input type="password" id="password" class="modal-login__input" placeholder="Пароль">
+			<label for="password" class="modal-login__label modal-login__label--password"><span class="visually-hidden">Пароль</span></label>
+			</p>
+			<p class="modal-login__field">
+			<input type="checkbox" id="checkbox" class="modal-login__checkbox">
+			<label for="checkbox" class="modal-login__label modal-login__label--checkbox">Запомнить меня</label>
+
+			<a href="" class="modal-login__link-forget">Забыл пароль</a>
+			</p>
+			<button type="submit" class="modal-login__submit button button-large button-large--brown">Войти<span class="hide-in-mobile"> в личный кабинет </span></button>
+			<button type="button" class="modal-login__close"><span class="hide-in-table">Закрыть</span></button>
+		</form>
+	</section>
+	<script src="js/picturefill.min.js"></script>
+	<script src="js/script.js"></script>
+</div>
+</body>
+</html>

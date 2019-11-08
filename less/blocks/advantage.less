@@ -1,0 +1,137 @@
+.advantage {
+	background-color: black;
+	position: relative;
+&:after {
+		.triagle(37px, -36px);
+	}
+	margin-bottom: 36px;
+}
+.advantage__list {
+	
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+}
+.advantage__item {
+	position: relative;
+	padding-top: 154px;
+	min-height: 326px;
+	width: 100%;
+	padding-left: 33px;
+	padding-right: 33px;
+	color: white;
+	text-align: center;
+	background-color: black;
+	
+
+	&:before {
+		.pseudo-elem();
+		width: 94px;
+		height: 94px;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		top: 33px;
+		left: 113px;
+	}
+	&--1:before {
+		background-image: url('../img/advantage-1.svg');
+	}
+	&--2:before {
+		background-image: url('../img/advantage-2.svg');
+	}
+	&--3:before {
+		background-image: url('../img/advantage-3.svg');
+	}
+
+}
+.advantage__item h3 {
+	font-size: 	30px;
+	line-height: 30px;
+	margin: 0;
+	text-transform: uppercase;
+}
+.advantage__item p {
+	font-size: 	20px;
+	line-height: 27px;
+	font-weight: normal;
+	margin-top: 18px;
+	margin-bottom: 0;
+
+}
+
+@media (min-width: @mobile-width) and (max-width: @tablet-width) {
+	.advantage:not(.advantage--no-js) {
+		.advantage__button {
+			display: inline-block;
+		}
+		.advantage__item {
+			display: none;
+			&--current {
+				display: block;
+			}
+		}
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.advantage{
+			background-color: @header-bcolor;
+			margin-bottom: 43px;
+			padding-top: 13px;
+		&:after {
+		.triagle(43px, -43px, @header-bcolor);
+		}
+		
+		.advantage__item {
+			
+			background-color: @header-bcolor;
+		}
+	}
+	.advantage__item p {
+		margin-top: 14px;
+	}
+	@media (max-width: @desktop-width){
+		
+		.advantage__item {
+			min-height: 173px;
+			padding-top: 36px;
+			padding-bottom: 36px;
+			padding-left: 160px;
+			text-align: left;
+			&:before {
+				left: 30px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			&:not(:last-child){
+				background-image:  
+				linear-gradient(to right, transparent 5%, rgba(255,255,255,0.1) 5%, rgba(255,255,255,0.1) 95%, transparent 95%);
+			    background-repeat: no-repeat;
+			    background-size: 100% 1px;
+			    background-position: bottom;
+			}
+		}
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.advantage{
+		margin-bottom: 67px;
+		padding-top: 45px;
+		&:after {
+		.triagle(67px, -67px, @header-bcolor);
+		}
+		
+	}
+		.advantage__item {
+			min-height: 343px;
+			width: 320px;
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+		.advantage__list {
+			display: flex;
+		}
+}

@@ -1,0 +1,39 @@
+.slide-radio {
+	text-align: center;
+	&--black {
+	}
+	font-size: 0;
+}
+.slide-radio__button {
+	font-size: 1px;
+	position: relative;
+	display: none;
+	width: 32px;
+	height: 32px;
+	background-color: transparent;
+	border: none;
+	&:before {
+		.pseudo-elem();
+		width: 7px;
+		height: 7px;
+		border: 1px solid #f7f4f1;
+		transform: translate(-50%, -50%) rotate(45deg);
+		top: 50%;
+		left: 50%;
+	}
+	&--current:before {
+		background-color: white;
+	}
+}
+.slide-radio {
+	&--black {
+		.slide-radio__button {
+			&:before {
+				border-color: black;
+			}
+			&--current:before {
+				background-color: black;
+			}
+		}
+	}
+}

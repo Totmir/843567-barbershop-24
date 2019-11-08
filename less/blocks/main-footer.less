@@ -1,0 +1,107 @@
+.main-footer {
+	background-color: @footer-bcolor;
+	color: white;
+	padding-top: 37px;
+	text-align: center;
+}
+.contats {
+	margin-top: 35px;
+	margin-bottom: 25px;
+}
+.contats p {
+	width: 214px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 13px;
+	margin-bottom: 16px;
+}
+
+.social {
+	font-size: 0;
+	margin-bottom: 19px;
+}
+.copyright {
+	padding-bottom: 24px;
+}
+.copyright b {
+	display: inline-block;
+	font-weight: normal;
+	margin-bottom: 12px;
+}
+.social__link--vk {
+	background-image: url('../img/vk-icon-big.png');
+}
+.social__link--fb {
+	background-image: url('../img/facebook-icon-big.png');
+}
+.social__link--inst {
+	background-image: url('../img/insta-icon-big.png');
+}
+@media (min-width: @tablet-width) {
+	.main-footer {
+		padding-top: 51px;
+	}
+	.contats {
+	margin-top: 0px;
+	text-align: left;
+	}
+	.footer__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.social {
+		order: 1;
+	}
+	.contacts__phone {
+		text-transform: none;
+		display: inline;
+		border: none;
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: normal;
+		font-family: inherit;
+		width: 180px;
+		text-align: left;
+		&:before {
+			content: "Тел.: ";
+		}
+	}
+	.contats b {
+		text-transform: uppercase;
+	}
+	.contats p {
+		width: 340px;
+		margin-bottom: 0;
+	}
+	.copyright {
+		padding-bottom: 50px;
+	}
+}
+@media (min-width: @desktop-width) {
+	.social {
+		order: 0;
+		&:before {
+			display: block;
+			content: "Давайте дружить!";
+			font-size: 18px;
+			color: white;
+			margin-bottom: 13px;
+		}
+	}
+	.copyright {
+		padding-left: 180px;
+	}
+	.footer__container {
+		align-items: flex-start;
+	}
+	.social__link--vk {
+	background-image: url('../img/vk-icon-small.png');
+	}
+	.social__link--fb {
+		background-image: url('../img/facebook-icon-small.png');
+	}
+	.social__link--inst {
+		background-image: url('../img/insta-icon-small.png');
+	}
+}

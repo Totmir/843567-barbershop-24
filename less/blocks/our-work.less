@@ -1,0 +1,239 @@
+.our-work__main-link {
+	display: none;
+}
+.our-work {
+	background-color: @secwhite-bcolor;
+	padding-top: 30px;
+}
+.our-work__container {
+	position: relative;
+	padding-bottom: 13px;
+	&:after {
+		.triagle(@height: 37px, @bottom: -36px, @color: @secwhite-bcolor)
+	}
+}
+.our-work__list, .our-work__inner-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.our-work__inner-list {
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 27px;
+}
+.our-work__inner-item {
+	position: relative;
+	padding-left: 55px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	display: inline-block;
+	&:before {
+		.pseudo-elem();
+		height: 21px;
+		width: 50px;
+		display: inline-block;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&--mustache:before {
+		background-image: url('../img/mustache-icon.svg');
+	}
+	&--scissors:before {
+		background-image: url('../img/scissors-icon.svg');
+	}
+	&--beard:before {
+		background-image: url('../img/beard-icon.svg');
+	}
+}
+.our-work__item {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 22px;
+	border: 1px solid @border-inner-color;
+}
+
+.our-work__item--monthy {
+	.our-work__image-wrapper {
+		.monthy-work(to-bottom,30px);
+	}
+}
+
+.our-work__cite {
+	font-size: 24px;
+	line-height: 27px;
+	font-style: normal;
+	font-weight: bold;
+}
+.our-work__quote-container {
+	padding-top: 14px;
+	padding-left: 24px;
+	padding-right: 28px;
+
+	p {
+		margin-bottom: 20px;
+		margin-top: 15px;
+		    letter-spacing: 0.03em;
+    word-spacing: -0.09em;
+    line-height: 1.49em;
+	}
+}
+@media (max-width: @tablet-width) {
+	//only mobile
+	.our-work__inner-item {
+		&:nth-last-child(1) {
+			margin-bottom: 10px;
+		}
+	}
+	.our-work__item:not(:first-child) {
+		.our-work__inner-item:nth-last-child(1){
+			margin-bottom: 23px;
+		}
+		.our-work__item p {
+			margin-bottom: 16px;
+		}
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.our-work{
+		padding-top: 53px;
+	}
+	.our-work__container {
+		padding-bottom: 17px;
+		&:before {
+			.triagle-reversed (42px,-95px, @secwhite-bcolor);
+		}
+		&:after {
+			.triagle (42px,-41px, @secwhite-bcolor);
+		}
+}
+	
+	.our-work__item {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.our-work__main-link {
+		display: inline-block;
+	}
+	.our-work__title-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 16px;
+	}
+	.our-work__item {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 43px;
+		.our-work__image-wrapper {
+			width: 270px;
+			height: 294px;
+		}
+	}
+	.our-work__item--monthy {
+		.our-work__image-wrapper {
+			.monthy-work(36px);
+		}
+	}
+	.our-work__item:first-child {
+		min-height: 481px;
+		
+		.our-work__image-wrapper {
+			width: 270px;
+			height: 480px;
+		}
+	}
+	.our-work__quote-container,
+	.our-work__inner-list {
+		width: 280px;
+	}
+	.our-work__column-container {
+		margin-left: 30px;
+		display: flex;
+		flex-direction: column;
+	}
+	.our-work__inner-list {
+		margin-top: auto;
+	}
+	.our-work__quote-container {
+		width: 300px;
+		padding-top: 40px;
+		
+	}
+	.our-work__quote-container p {
+		margin-top: 30px;
+	}
+}
+@media (min-width: @desktop-width){
+	    padding-bottom: 45px;
+	.our-work__container {
+		
+		&:before {
+			.triagle-reversed (66px,-119px, @secwhite-bcolor);
+		}
+		&:after {
+			display: none;
+		}
+	}
+	.our-work__list{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.our-work__item:first-child {
+		min-height: 481px;
+		width: 958px;
+		.our-work__inner-list{
+			width: 400px;
+		}
+		.our-work__quote-container {
+			padding-top: 128px;
+			padding-left: 8px;
+		}
+		.our-work__image-wrapper {
+			width: 480px;
+			height: 480px;
+		}
+	}
+	.our-work__title-container {
+		margin-bottom: 55px;
+	}
+	.our-work__item {
+		.our-work__image-wrapper {
+			width: 294px;
+			height: 293px;
+		}
+		&:not(:first-child){
+			width: 293px;
+			min-height: 543px;
+			flex-direction: column;
+
+			 .our-work__column-container{
+					margin-left: 0;
+					flex-grow: 1;
+			 }
+			 .our-work__quote-container {
+			 	width: 292px;
+			 	padding-top: 30px;
+			 	padding-left: 35px;
+			 	    padding-right: 18px;
+			 }
+		}
+	}
+	.our-work__item--monthy {
+		position: relative;
+		.our-work__image-wrapper {
+			.monthy-work(to-right,30px);
+			position: static;
+			&:after {
+				right: -3%;
+			}
+		}
+	}
+}
